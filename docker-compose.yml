@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    restart: always
+    ports:
+      - "8070:8070"
+    command: ./api
+  checker:
+    build: . 
+    restart: always
+    command: ./checker
